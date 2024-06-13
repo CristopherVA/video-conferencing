@@ -1,9 +1,14 @@
-import React from 'react'
+import CallList from "@/components/call-list";
+import React from "react";
 
 const Recording = () => {
   return (
-    <div>Recording</div>
-  )
-}
+    <section className="flex size-full flex-col gap-10 text-white">
+      <h1 className="text-3xl font-bold">Recording</h1>
 
-export default Recording
+      <CallList type="recordings" />
+    </section>
+  );
+};
+
+export default Recording;
